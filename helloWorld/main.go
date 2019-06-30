@@ -17,8 +17,8 @@ func main() {
 	// 	}
 	// }
 	// fmt.Println(try.Add(50, 2))
-	var sum int
+
 	num := []int{1, 6, 3}
-	sum = try.Add_multi(num)
+	sum := try.Add_multi(num)
 	fmt.Println(sum)
 }
