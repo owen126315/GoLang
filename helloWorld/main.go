@@ -1,8 +1,8 @@
 package main
 
 import (
+	"first_Golang/try"
 	"fmt"
-	"try"
 )
 
 func main() {
