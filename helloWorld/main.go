@@ -1,30 +1,25 @@
 package main
 
 import (
+	"first_Golang/try"
 	"fmt"
 	"math/rand"
 )
 
 func main() {
 	fmt.Println("Hello world!")
-	var num = make([]int, 10)
+	num := make([]int, 10)
 	for i := 0; i < len(num); i++ {
 		num[i] = rand.Intn(100)
 	}
 	// sum := try.Add_multi(num)
-	insertionsort(num)
-	fmt.Println(num)
+	try.Insertionsort(num)
+	for i := 0; i < len(num); i++ {
+		fmt.Printf("num[%d] = %v\n", i, num[i])
+	}
+
 }
 
-func insertionsort(items []int) {
-	var n = len(items)
-	for i := 1; i < n; i++ {
-		j := i
-		for j > 0 {
-			if items[j-1] > items[j] {
-				items[j-1], items[j] = items[j], items[j-1]
-			}
-			j = j - 1
-		}
-	}
-}
+// 1D
+// 2C
+// 3C
