@@ -1,7 +1,12 @@
 package try
 
-var My_str = "hi"
+//try Struct
+type Student struct {
+	Name string
+	Age  int
+}
 
+//start with Capital letter means public
 func Add(a int, b int) int {
 	return a + b
 }
