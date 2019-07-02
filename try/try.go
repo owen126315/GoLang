@@ -13,3 +13,7 @@ func Add_multi(x []int) int {
 	}
 	return sum
 }
+
+func insersort(num *[]int) {
+
+}
