@@ -12,20 +12,23 @@ var student1 = try.Student{
 	Age:  22,
 }
 
+var m map[string]try.Student
+
 func main() {
 	//defer will run after return
 	defer fmt.Println("bye")
 
 	fmt.Println("----Program Start----")
-
 	fmt.Printf("%s\t%d\n", student1.Name, student1.Age)
-	//create a pointer and set student1's address to it
-	var student2 *try.Student
-	student2 = &student1
-	student2.Name = "Owen"
-	fmt.Printf("%s\t%d\n", student2.Name, student2.Age)
+
+	my_map := make(map[string]try.Student)
+	my_map["EE"] = try.Student{
+		Name: "Owen",
+		Age:  23,
+	}
+
+	fmt.Println(my_map["EE"])
 	//make(type,len,size) to declare slice
-	//slice is pass by reference, similar to pointer
 	num := make([]int, 10)
 
 	// int array with len 10
@@ -49,6 +52,10 @@ func main() {
 
 	// v will copy the value from the slice 'num'
 	for i, v := range num {
-		fmt.Printf("num[%d] = %v\n", i, v)
+		fmt.Printf("num[%d] = %d\n", i, v)
 	}
 }
+
+// 1C
+// 2B
+// 3A
