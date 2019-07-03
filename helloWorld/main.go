@@ -55,7 +55,3 @@ func main() {
 		fmt.Printf("num[%d] = %d\n", i, v)
 	}
 }
-
-// 1C
-// 2B
-// 3A
